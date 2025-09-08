@@ -4,47 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles.css">
-    <title>Hello World!
-    </title>
+    <title>Hello World!</title>
 </head>
 <body class="grid-container">
     <header class="header-container">
         <section class="header-section1">
-            <div id="more-header">More</div>
-            <div id="date-header">Friday, 6 January 2023</div>
-            <div id="social-header">Redes Sociales</div>
-            <div id="search-header">SEARCH</div>
+            <div id="more-header" style="background-color: burlywood;">MORE</div>
+            <div id="date-header" style="background-color: coral;">Friday, 6 January 2023</div>
+            <div id="social-header" style="background-color: burlywood;">Redes Sociales</div>
+            <div id="search-header" style="background-color: coral;">SEARCH</div>
         </section>
 
         <section class="header-section2">
-            <div id="helloworld-header">HELLO WORLD</div>
+            <h1 id="helloworld-header">HELLO WORLD</h1>
             <div id="description-header">NEWSPAPER / MAGAZINE / PUBLISHER</div>
         </section>
 
         <nav class="nav-container">
-            <ul id="nav-items">
+            <ul class="nav-items">
                 <li>HOME</li>
                 <li>LAYOUT</li>
-                <li>NEWS</li>
-                <li>ECONOMY</li>
+                <li class="no-point">NEWS</li>
+                <li class="no-point">ECONOMY</li>
                 <li>ENTERTAINMENT</li>
-                <li>JOBS</li>
+                <li class="no-point">JOBS</li>
             </ul>
         </nav>
     </header>
 
     <main class="main-container">
         <section class="section-articles1">
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
-            <article>Lorem ipsum dolor sit amet consectetur adipisicing elit.</article>
+            <article class="article1">
+                <img src="./images/lorem.png" class="article1-image">
+                <div class="article-text">
+                    <h3 class="article-title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="article-dateview">2 SEP,2023 90 VIEWS</p>
+                </div>
+            </article>
+            <article class="article1">
+                <img src="./images/lorem.png" class="article1-image">
+                <div class="article-text">
+                    <h3 class="article-title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="article-dateview">2 SEP,2023 90 VIEWS</p>
+                </div>
+            </article>
+            <article class="article1">
+                <img src="./images/lorem.png" class="article1-image">
+                <div class="article-text">
+                    <h3 class="article-title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="article-dateview">2 SEP,2023 90 VIEWS</p>
+                </div>
+            </article>
+            <article class="article1">
+                <img src="./images/lorem.png" class="article1-image">
+                <div class="article-text">
+                    <h3 class="article-title">Lorem ipsum dolor sit amet.</h3>
+                    <p class="article-dateview">2 SEP,2023 90 VIEWS</p>
+                </div>
+            </article>
         </section>
 
         <figure class="big-figure">
-            <img src="./images/fashionmen.png" alt="">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <img src="./images/fashionmen.png" class="big-figure-image">
+            <div class="big-figure-info">
+                <h2 class="big-figure-title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, voluptates perspiciatis.</h2>
+                <div class="big-figure-author">Steven Job 21 SEP,2023</div>
+                <p class="big-figure-synthesis">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem debitis animi necessitatibus. Aperiam soluta labore praesentium facere necessitatibus, quis veniam nobis laudantium excepturi.</p>
+            </div>
         </figure>
+
+        <aside class="aside-container">i am on the side</aside>
 
         <section class="recent-posts">
             <articles>a</articles>
@@ -55,9 +84,10 @@
             <articles>f</articles>
         </section>
 
-    </main>
+        <section class="summary">
 
-    <aside class="aside-container">i am on the side</aside>
+        </section>
+    </main>
 
     <footer class="footer-container">
         Estoy abajito

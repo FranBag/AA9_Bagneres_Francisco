@@ -13,11 +13,10 @@ body {
     display: grid;
     min-height: 100vh;
     grid-template-areas:
-        "header header"
-        "main aside"
-        "footer footer";
-    grid-template-columns: 70% 30%;
-    grid-template-rows: 15% 65% 20%;
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
 }
 
 .header-container {
@@ -26,7 +25,7 @@ body {
     grid-template-areas:
         "header-section1"
         "header-section2"
-        "nav";
+        "nav-container";
     grid-template-rows: auto auto auto;
     background-color: blueviolet;
 }
@@ -34,34 +33,50 @@ body {
 .header-section1 {
     grid-area: header-section1;
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: 8% auto auto 8%;
 }
 
 .header-section2 {
     grid-area: header-section2;
     display: grid;
     grid-template-rows: auto auto;
+    justify-items: center;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
     background-color: bisque;
 }
 
 .nav-container {
-    grid-area: nav;
+    grid-area: nav-container;
     background-color: chartreuse;
 }
 
-#nav-items {
-    display: grid;
-    grid-template-columns: repeat(6, auto);
+.nav-items {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.nav-items li {
+    margin: 0 25px 0 25px;
+}
+
+.no-point {
+    list-style-type: none;
 }
 
 .main-container {
     grid-area: main;
     display: grid;
     grid-template-areas:
-        "articles1"
-        "figure"
-        "recent-posts";
-    grid-template-rows: auto auto auto;
+        "articles1 articles1"
+        "figure aside"
+        "recent-posts aside"
+        "summary summary";
+    grid-template-columns: 65% 35%;
+    grid-template-rows: auto auto auto auto;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
     background-color: aquamarine;
 }
 
@@ -73,8 +88,38 @@ body {
 
 .big-figure {
     grid-area: figure;
+}
+
+.big-figure-image {
+    width: 100%;
+}
+
+.big-figure-info {
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-areas:
+        "big-figure-title big-figure-title"
+        "big-figure-author big-figure-synthesis";
+}
+
+.big-figure-title {
+    grid-area: big-figure-title;
+}
+
+.big-figure-author {
+    grid-area: big-figure-author;
+}
+
+.big-figure-synthesis {
+    grid-area: big-figure-synthesis;
+}
+
+
+.aside-container {
+    grid-area: aside;
+    display: grid;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    background-color: chocolate;
 }
 
 .recent-posts {
@@ -83,11 +128,9 @@ body {
     grid-template-rows: repeat(6, auto);
 }
 
-
-.aside-container {
-    grid-area: aside;
-    display: grid;
-    background-color: chocolate;
+.summary {
+    grid-area: summary;
+    background-color: brown;
 }
 
 
@@ -98,3 +141,61 @@ body {
         "";
     background-color: darkcyan;
 }
+
+
+
+
+#more-header {
+    border-right: 3px solid black;
+}
+
+#date-header {
+}
+
+#social-header {
+    text-align: right;
+    border-right: 3px solid black;
+    padding-right: 20px;
+}
+
+#search-header {
+    text-align: right;
+    padding-left: 20px;
+}
+
+#helloworld-header {
+    font-size: 70px;
+    margin: 30px 0 10px 0;
+}
+
+#description-header {
+    margin-bottom: 20px;
+}
+
+.article1 {
+    display: grid;
+    grid-template-areas:
+        "article1-image article-text";
+    grid-template-columns: 30% auto;
+    margin-top: 20px;
+}
+
+.article1-image {
+    grid-area: article1-image;
+    width: 100%;
+    margin: 0 20px 0 5px;
+}
+
+.article-text {
+    grid-area: article-text;
+    padding: 0 20px 0 20px;
+}
+
+.article-title {
+    margin: 0;
+}
+
+article {
+    border: 2px solid black;
+}
+
