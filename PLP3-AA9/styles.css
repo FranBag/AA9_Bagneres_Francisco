@@ -92,9 +92,6 @@ body {
     border: 5px solid black;
 }
 
-.big-figure-image {
-}
-
 .big-figure-info {
     display: grid;
     grid-template-areas:
@@ -177,9 +174,6 @@ body {
 
 #more-header {
     border-right: 3px solid black;
-}
-
-#date-header {
 }
 
 #social-header {
@@ -395,6 +389,16 @@ body {
 
 .summary-instagram-image-container {
     margin-right: 60px;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#footer-socialnetwork-image {
+    width: 15%;
 }
 
 article {
